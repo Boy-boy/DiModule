@@ -1,0 +1,2 @@
+# DiModule
+aspdotnetcore DI
