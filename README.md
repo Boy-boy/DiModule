@@ -2,6 +2,8 @@
 
 我们只需在我们的类库中添加模块并继承DiModule类，将实现模块化注入！例如：
 
+  
+  
   [DependsOn(typeof(BLLModule))]
   public class StartupModule:DiModule
     {
