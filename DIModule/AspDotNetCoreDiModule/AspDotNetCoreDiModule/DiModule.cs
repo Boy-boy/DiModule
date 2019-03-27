@@ -1,4 +1,6 @@
 ﻿using AspDotNetCoreDiModule.Attributes;
+using Autofac;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,9 @@ namespace AspDotNetCoreDiModule
 {
     public abstract class DiModule
     {
+        protected internal ContainerBuilder ContainerBuilder { get; internal set; }
+
+        protected internal IConfiguration Configuration { get; internal set; }
         public virtual void PreInitialize()
         {
 

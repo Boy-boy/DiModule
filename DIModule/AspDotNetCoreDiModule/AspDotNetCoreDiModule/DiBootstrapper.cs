@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Autofac;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 
@@ -8,15 +10,24 @@ namespace AspDotNetCoreDiModule
     {
         public Type StartupModule { get; }
 
-        public IServiceCollection ServiceDescriptors { get; }
+        public ContainerBuilder ContainerBuilder { get; }
+
+        private IServiceCollection ServiceDescriptors { get; }
 
         public List<DiModule> Instances { get; }
 
-        public DiBootstrapper(Type startupModule, IServiceCollection serviceDescriptors)
+        public DiBootstrapper(Type startupModule, IServiceCollection services)
         {
             StartupModule = startupModule;
-            ServiceDescriptors = serviceDescriptors;
+            ContainerBuilder = new ContainerBuilder();
+            ServiceDescriptors = services;
             Instances = new List<DiModule>();
+        }
+
+        public static DiBootstrapper Create<TStartupModule>(IServiceCollection services)
+            where TStartupModule : DiModule
+        {
+            return new DiBootstrapper(typeof(TStartupModule), services);
         }
 
         public virtual void Initialize()
@@ -26,6 +37,8 @@ namespace AspDotNetCoreDiModule
             CreateModules(moduleTypes);
             StartModules();
         }
+
+
         private List<Type> FindAllModuleTypes()
         {
             var modules = DiModule.FindDependedModuleTypesRecursivelyIncludingGivenModule(StartupModule);
@@ -41,10 +54,12 @@ namespace AspDotNetCoreDiModule
 
         private void CreateModules(ICollection<Type> moduleTypes)
         {
-            var provider = ServiceDescriptors.BuildServiceProvider();
+            var serviceProvider = ServiceDescriptors.BuildServiceProvider();
             foreach (var moduleType in moduleTypes)
             {
-                var instance = provider.GetRequiredService(moduleType) as DiModule;
+                if (!(serviceProvider.GetService(moduleType) is DiModule instance)) continue;
+                instance.ContainerBuilder = ContainerBuilder;
+                instance.Configuration = serviceProvider.GetService<IConfigurationRoot>();
                 Instances.Add(instance);
             }
         }

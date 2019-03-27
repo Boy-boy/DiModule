@@ -1,13 +1,31 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Autofac.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace AspDotNetCoreDiModule
 {
     public static class DiServiceCollectionExtensions
     {
-        public static void AddModule<TStartupModule>(this IServiceCollection services)
-            where TStartupModule : class
+        public static IServiceProvider AddModule<TStartupModule>(this IServiceCollection services)
+            where TStartupModule : DiModule
         {
-            services.AddSingleton(new DiBootstrapper(typeof(TStartupModule), services));
+            var diBootstrapper = AddDiBootstrapper<TStartupModule>(services);
+            return AutofacServiceProvider(services, diBootstrapper);
+        }
+
+        private static DiBootstrapper AddDiBootstrapper<TStartupModule>(IServiceCollection services)
+            where TStartupModule : DiModule
+        {
+            var abpBootstrapper = DiBootstrapper.Create<TStartupModule>(services);
+            abpBootstrapper.Initialize();
+            return abpBootstrapper;
+        }
+
+        private static IServiceProvider AutofacServiceProvider(IServiceCollection services, DiBootstrapper diBootstrapper)
+        {
+            diBootstrapper.ContainerBuilder.Populate(services);
+            var applicationContainer = diBootstrapper.ContainerBuilder.Build();
+            return new AutofacServiceProvider(applicationContainer);
         }
     }
 }
