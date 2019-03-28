@@ -2,19 +2,11 @@
 
 我们只需在我们的类库中添加模块并继承DiModule类，将实现模块化注入！例如：
 
-  
-  
-  [DependsOn(typeof(BLLModule))]
-  public class StartupModule:DiModule
-    {
-        public override void PreInitialize()
-        {
-        }
-        public override void Initialize()
-        {
-        }
+  [DependsOn(typeof(BLLModule))]</br>
+  public class StartupModule:DiModule</br>
+   {     
+   }
 
-        public override void PostInitialize()
-        {
-        }
-    }
+最后通过在startup类里面的ConfigureServices方法里添加service.AddModule<StartupModule>()即可完成模块化注入;
+  
+  
