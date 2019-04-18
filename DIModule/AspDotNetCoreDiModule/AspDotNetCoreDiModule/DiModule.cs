@@ -1,5 +1,6 @@
 ﻿using AspDotNetCoreDiModule.Attributes;
 using Autofac;
+using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -8,24 +9,22 @@ using System.Reflection;
 
 namespace AspDotNetCoreDiModule
 {
-    public abstract class DiModule
+    public abstract class DiModule: Profile
     {
         protected internal ContainerBuilder ContainerBuilder { get; internal set; }
 
         protected internal IConfiguration Configuration { get; internal set; }
+
         public virtual void PreInitialize()
         {
-
         }
 
         public virtual void Initialize()
-        {
-
+        {          
         }
 
         public virtual void PostInitialize()
         {
-
         }
         public static List<Type> FindDependedModuleTypesRecursivelyIncludingGivenModule(Type moduleType)
         {
@@ -36,7 +35,7 @@ namespace AspDotNetCoreDiModule
 
         private static void AddModuleAndDependenciesRecursively(List<Type> modules, Type module)
         {
-            if (!IsAbpModule(module))
+            if (!IsDiModule(module))
             {
                 throw new Exception("This type is not an Di module: " + module.AssemblyQualifiedName);
             }
@@ -57,7 +56,7 @@ namespace AspDotNetCoreDiModule
 
         public static List<Type> FindDependedModuleTypes(Type moduleType)
         {
-            if (!IsAbpModule(moduleType))
+            if (!IsDiModule(moduleType))
             {
                 throw new Exception("This type is not an Di module: " + moduleType.AssemblyQualifiedName);
             }
@@ -78,7 +77,7 @@ namespace AspDotNetCoreDiModule
             return list;
         }
 
-        public static bool IsAbpModule(Type type)
+        public static bool IsDiModule(Type type)
         {
             var typeInfo = type.GetTypeInfo();
             return

@@ -1,0 +1,17 @@
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.deps.json
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.runtimeconfig.json
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.runtimeconfig.dev.json
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.dll
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.pdb
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.dll
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.pdb
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.csprojAssemblyReference.cache
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.csproj.CoreCompileInputs.cache
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.RazorAssemblyInfo.cache
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.RazorAssemblyInfo.cs
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.AssemblyInfoInputs.cache
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.AssemblyInfo.cs
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.RazorTargetAssemblyInfo.cache
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.csproj.CopyComplete
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.dll
+C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule.Task\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.Task.pdb
