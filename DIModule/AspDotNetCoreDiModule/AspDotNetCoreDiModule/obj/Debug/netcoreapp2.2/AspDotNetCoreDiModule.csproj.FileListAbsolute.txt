@@ -22,3 +22,10 @@ C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiMo
 C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.AssemblyInfo.cs
 C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.dll
 C:\Users\33944\Desktop\个人文件\DiModule\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.pdb
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.AssemblyInfo.cs
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.dll
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\obj\Debug\netcoreapp2.2\AspDotNetCoreDiModule.pdb
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.deps.json
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.dll
+C:\Users\Dell\Desktop\DiModule\DIModule\AspDotNetCoreDiModule\AspDotNetCoreDiModule\bin\Debug\netcoreapp2.2\AspDotNetCoreDiModule.pdb

@@ -1,5 +1,4 @@
 ﻿using Autofac.Extensions.DependencyInjection;
-using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -10,7 +9,6 @@ namespace AspDotNetCoreDiModule
         public static IServiceProvider AddModule<TStartupModule>(this IServiceCollection services)
             where TStartupModule : DiModule
         {
-            services.AddAutoMapper();
             var diBootstrapper = AddDiBootstrapper<TStartupModule>(services);
             return AutofacServiceProvider(services, diBootstrapper);
         }

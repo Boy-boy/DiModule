@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33944\\Desktop\\个人文件\\DiModule\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33944\\Desktop\\个人文件\\DiModule\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj": {
+    "C:\\Users\\Dell\\Desktop\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33944\\Desktop\\个人文件\\DiModule\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj",
         "projectName": "AspDotNetCoreDiModule",
-        "projectPath": "C:\\Users\\33944\\Desktop\\个人文件\\DiModule\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj",
-        "packagesPath": "C:\\Users\\33944\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33944\\Desktop\\个人文件\\DiModule\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\DiModule\\DIModule\\AspDotNetCoreDiModule\\AspDotNetCoreDiModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\33944\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,14 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://djnuget.1hai.cn/nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -48,15 +41,15 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[4.4.0, )"
             },
-            "Microsoft.AspNetCore": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
@@ -68,10 +61,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

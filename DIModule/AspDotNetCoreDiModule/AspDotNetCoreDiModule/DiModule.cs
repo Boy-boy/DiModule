@@ -1,6 +1,5 @@
 ﻿using AspDotNetCoreDiModule.Attributes;
 using Autofac;
-using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using System.Reflection;
 
 namespace AspDotNetCoreDiModule
 {
-    public abstract class DiModule: Profile
+    public abstract class DiModule
     {
         protected internal ContainerBuilder ContainerBuilder { get; internal set; }
 
