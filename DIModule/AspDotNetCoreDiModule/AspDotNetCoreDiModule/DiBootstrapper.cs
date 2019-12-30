@@ -59,7 +59,7 @@ namespace AspDotNetCoreDiModule
             {
                 if (!(serviceProvider.GetService(moduleType) is DiModule instance)) continue;
                 instance.ContainerBuilder = ContainerBuilder;
-                instance.Configuration = serviceProvider.GetService<IConfigurationRoot>();
+                instance.Configuration = serviceProvider.GetService<IConfiguration>();
                 Instances.Add(instance);
             }
         }
